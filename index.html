@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main-carrossel.css">
+    <title>Carrossel JavaScript</title>
+</head>
+<body>
+    <header>
+            <a class="button-carrossel puro" href="/carrossel-css.html" >carrossel-css</a>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slides" id="carouselSlides">
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="slide-title">Slide 1</div>
+                        <div class="slide-subtitle">Primeiro slide do carrossel</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="slide-title">Slide 2</div>
+                        <div class="slide-subtitle">Segundo slide com cores diferentes</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="slide-title">Slide 3</div>
+                        <div class="slide-subtitle">Terceiro slide do carrossel</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="slide-title">Slide 4</div>
+                        <div class="slide-subtitle">Quarto slide com gradiente</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="slide-title">Slide 5</div>
+                        <div class="slide-subtitle">Último slide do carrossel</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+        </div>
+        
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <script src="/assets/js/carrossel.js"></script>
+</body>
+</html>
